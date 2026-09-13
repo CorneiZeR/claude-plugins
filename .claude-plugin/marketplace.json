@@ -1,0 +1,39 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "corneizer",
+  "description": "Skills I use every day, kept where they can be installed rather than copied.",
+  "owner": {
+    "name": "Oleksii Kolosiuk"
+  },
+  "plugins": [
+    {
+      "name": "nuclock",
+      "description": "Working in the nuclock tracker: plan a backlog into a queue, see what is next and what is blocked, take a task from start to done, and keep the timer honest. Ships hooks that warn and never write time.",
+      "source": {
+        "source": "github",
+        "repo": "CorneiZeR/nuclock-skill"
+      },
+      "keywords": [
+        "nuclock",
+        "time-tracking",
+        "tasks",
+        "timer",
+        "mcp"
+      ]
+    },
+    {
+      "name": "coderabbit",
+      "description": "Reviewing with CodeRabbit as an operating procedure: which surface to spend, how the hourly allowances behave, how to prove a head is really reviewed, and why a finding is a sample of a class rather than a single site.",
+      "source": {
+        "source": "github",
+        "repo": "CorneiZeR/coderabbit-skill"
+      },
+      "keywords": [
+        "code-review",
+        "coderabbit",
+        "merge-request",
+        "quality"
+      ]
+    }
+  ]
+}
