@@ -1,6 +1,6 @@
 <h1 align="center">claude-plugins</h1>
 
-<p align="center"><em>Two skills, installable rather than copied.</em></p>
+<p align="center"><em>Three skills, installable rather than copied.</em></p>
 
 ---
 
@@ -15,6 +15,7 @@ Then install whichever you want:
 ```
 /plugin install nuclock@corneizer
 /plugin install coderabbit@corneizer
+/plugin install vet@corneizer
 ```
 
 `/plugin update` keeps them current, and `/plugin uninstall` takes one back
@@ -28,11 +29,12 @@ edited `settings.json` is a skill most people never finish installing.
 | --- | --- |
 | [`nuclock`](https://github.com/CorneiZeR/nuclock-skill) | Working in the nuclock tracker: planning a backlog into a queue, seeing what is next and what is BLOCKED, taking one task from start to done, and keeping the timer honest. |
 | [`coderabbit`](https://github.com/CorneiZeR/coderabbit-skill) | Reviewing with CodeRabbit: which surface to spend, how the hourly allowances behave, how to prove a head was really reviewed, and why a finding is a sample of a class rather than one site. |
+| [`vet`](https://github.com/CorneiZeR/vet-skill) | Reviewing a merge or pull request end to end: lenses written for the diff, every finding verified and the serious ones reproduced by a command, a mutation pass for behaviour no test pins, and the result staged as private drafts you publish, edit or discard. |
 
 This repository holds **only the list**. Each plugin lives in its own
 repository, is versioned there, and is fetched from there — so a fix to a
-skill does not need a change here, and adding a third skill does not touch
-either of the first two.
+skill does not need a change here, and adding another skill does not touch
+the ones already listed.
 
 ## What a plugin may bring with it
 
@@ -46,3 +48,6 @@ the end if a timer was left running. None of them blocks an edit and none
 writes time, for the same reason: a timer somebody did not start is time
 nobody can vouch for. Its README says so in full, and it is the kind of thing
 worth reading before a plugin is added to a machine.
+
+`vet` brings no hooks. It writes to a merge or pull request only as drafts that
+are visible to you alone, and publishes them only when you say so.

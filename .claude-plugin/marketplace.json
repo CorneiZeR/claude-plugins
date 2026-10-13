@@ -34,6 +34,20 @@
         "merge-request",
         "quality"
       ]
+    },
+    {
+      "name": "vet",
+      "description": "A full review pass for GitLab merge requests and GitHub pull requests: findings verified and reproduced by a command before anyone reads them, a mutation pass for untested behaviour, and the result staged as private drafts that are published only on your word.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/CorneiZeR/vet-skill.git"
+      },
+      "keywords": [
+        "code-review",
+        "merge-request",
+        "pull-request",
+        "workflow"
+      ]
     }
   ]
 }
